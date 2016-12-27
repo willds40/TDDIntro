@@ -37,12 +37,9 @@ public class LibraryTest {
         verify(printStream).println("Book Title\n");
     }
 
-
     @Test
-
     public void shouldPrintNothingWhenThereAreNoBooks() {
         library.listBooks();
-
         verify(printStream).println("");
     }
 
