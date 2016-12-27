@@ -29,7 +29,6 @@ public class LibraryTest {
     }
 
     @Test
-
     public void shouldPrintBookTitleWhenThereIsOneBook() {
         String title = "Book Title";
         books.add(title);
