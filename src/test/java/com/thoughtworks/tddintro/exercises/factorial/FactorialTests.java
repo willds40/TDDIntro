@@ -43,6 +43,11 @@ public class FactorialTests {
         assertThat(factorial.compute(3), is(6));
     }
 
+    @Test
+    public void shouldReturnOneTwnetyWhenNumberIsFive(){
+        assertThat(factorial.compute(5), is(120));
+    }
+
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowIllegalArgumentExceptionWhenNumberIsNegative(){
         factorial.compute(-1);
